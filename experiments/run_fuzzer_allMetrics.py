@@ -80,25 +80,13 @@ if __name__ == '__main__':
     instability_methods=['position_instability','velocity_instability', 'acceleration_instability']
 
     if "grasp" in dataset_name:
-        if 'ycb' in dataset_name:
-            vla = VLAInterface(model_name=args.model, task="google_robot_pick_customizable_ycb", metamorphic_visual_methods=metamorphic_VS_methods, instability_methods=instability_methods)
-        else:
-            vla = VLAInterface(model_name=args.model, task="google_robot_pick_customizable", metamorphic_visual_methods=metamorphic_VS_methods, instability_methods=instability_methods)
+        vla = VLAInterface(model_name=args.model, task="google_robot_pick_customizable", instability_methods=instability_methods)
     elif "move" in dataset_name:
-        if 'ycb' in dataset_name:
-            vla = VLAInterface(model_name=args.model, task="google_robot_move_near_customizable_ycb", metamorphic_visual_methods=metamorphic_VS_methods, instability_methods=instability_methods)
-        else:
-            vla = VLAInterface(model_name=args.model, task="google_robot_move_near_customizable", metamorphic_visual_methods=metamorphic_VS_methods, instability_methods=instability_methods)
+        vla = VLAInterface(model_name=args.model, task="google_robot_move_near_customizable",  instability_methods=instability_methods)
     elif "put-on" in dataset_name:
-        if 'ycb' in dataset_name:
-            vla = VLAInterface(model_name=args.model, task="widowx_put_on_customizable_ycb", metamorphic_visual_methods=metamorphic_VS_methods, instability_methods=instability_methods)
-        else:
-            vla = VLAInterface(model_name=args.model, task="widowx_put_on_customizable", metamorphic_visual_methods=metamorphic_VS_methods, instability_methods=instability_methods)
+        vla = VLAInterface(model_name=args.model, task="widowx_put_on_customizable",  instability_methods=instability_methods)
     elif "put-in" in dataset_name:
-        if 'ycb' in dataset_name:
-            vla = VLAInterface(model_name=args.model, task="widowx_put_in_customizable_ycb", metamorphic_visual_methods=metamorphic_VS_methods, instability_methods=instability_methods)
-        else:
-            vla = VLAInterface(model_name=args.model, task="widowx_put_in_customizable", metamorphic_visual_methods=metamorphic_VS_methods, instability_methods=instability_methods)
+        vla = VLAInterface(model_name=args.model, task="widowx_put_in_customizable",  instability_methods=instability_methods)
     else:
         raise NotImplementedError
 
