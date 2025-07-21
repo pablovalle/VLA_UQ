@@ -10,10 +10,8 @@ from pathlib import Path
 from tqdm import tqdm
 import json
 import os
-from PIL import Image
 import shutil
 import cv2
-from uncertainty.mutation_templates import templates_ps1, templates_ps2
 import re
 import torch
 import subprocess
