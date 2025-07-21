@@ -11,7 +11,6 @@ from simpler_env.utils.action.action_ensemble import ActionEnsembler
 from .geometry import quat2mat, mat2euler
 import numpy as np
 import torch
-from uncertainty.token_based_metrics import TokenMetrics
 from uncertainty.token_based_metrics_fast import TokenMetricsFast
 import time
 
@@ -56,7 +55,7 @@ class LerobotPiFastInference:
         self.policy_setup = policy_setup
         self.unnorm_key = unnorm_key
 
-        self.token_metrics = TokenMetrics()
+
         self.token_metrics_fast = TokenMetricsFast()
 
         print(f"*** policy_setup: {policy_setup}, unnorm_key: {unnorm_key} ***")
