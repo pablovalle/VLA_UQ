@@ -17,7 +17,7 @@ import time
 from pathlib import Path
 import uncertainty.utils as uncerUtils
 import torch
-from uncertainty.token_based_metrics import TokenMetrics
+
 from uncertainty.token_based_metrics_fast import TokenMetricsFast
 import uncertainty.uncertainty_metrics as uncerMetrics
 
@@ -56,7 +56,7 @@ sapien.render_config.rt_use_denoiser = True
 
 class VLAInterface:
     def __init__(self, task, model_name, metamorphic_visual_methods, instability_methods):
-        self.token_metrics = TokenMetrics()
+
         self.model_name = model_name
         self.token_metricsFast = TokenMetricsFast()
         self.metamorphic_visual_methods = metamorphic_visual_methods
