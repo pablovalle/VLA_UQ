@@ -16,7 +16,7 @@ NC='\033[0m' # No color
 # Usage message
 if [[ $# -lt 1 ]]; then
   echo -e "${RED}✘ Error: Missing Conda environment argument.${NC}"
-  echo -e "Usage: ${YELLOW}./eun_UQ_exp.sh <conda_env_name> [optional_model]${NC}"
+  echo -e "Usage: ${YELLOW}./run_UQ_exp.sh <conda_env_name> [optional_model]${NC}"
   exit 1
 fi
 
@@ -50,7 +50,7 @@ datasets=(
 
 # Start banner
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e "      🚀 Launching Uncertainty4VLAs Engine"
+echo -e "      🚀 Launching UQ4VLAs Engine"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 
 # Main experiment loop

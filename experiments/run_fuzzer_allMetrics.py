@@ -52,7 +52,7 @@ if __name__ == '__main__':
     parser.add_argument('-io', '--image_output', type=str, default=None, help="Image output path, e.g., folder")
     parser.add_argument('-s', '--seed', type=int, default=None, help="Random Seed")
     parser.add_argument('-m', '--model', type=str,
-                        choices=["rt_1_x", "rt_1_400k", "rt_1_58k", "rt_1_1k", "octo-base", "octo-small", "openvla-7b", "pi0", "spatialvla-4b"],
+                        choices=["openvla-7b", "pi0", "spatialvla-4b"],
                         default="spatialvla-4b",
                         help="VLA model")
     parser.add_argument('-r', '--resume', type=bool, default=True, help="Resume from where we left.")
