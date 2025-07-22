@@ -103,7 +103,7 @@ class VLAInterface:
             raise ValueError(model_name)
 
     def run_interface(self, seed=None, options=None, task_type=None):
-
+        
         env = simpler_env.make(self.task)
         obs, reset_info = env.reset(seed=seed, options=options)
         instruction = env.unwrapped.get_language_instruction()

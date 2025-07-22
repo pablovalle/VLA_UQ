@@ -9,7 +9,7 @@ import uncertainty.utils as uncerUtils
 
 
 
-VARIABILITY=1
+VARIABILITY=4
 def compute_position_instability(actions: np.ndarray) -> np.ndarray:
     action_array = np.array([
         np.concatenate((

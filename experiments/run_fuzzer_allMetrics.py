@@ -96,7 +96,7 @@ if __name__ == '__main__':
     if args.output:
         result_dir = args.output + data_path.split('/')[-1].split(".")[0]
     else:
-        result_dir = str(PACKAGE_DIR) + "/../results2/" + data_path.split('/')[-1].split(".")[0]
+        result_dir = str(PACKAGE_DIR) + "/../results/" + data_path.split('/')[-1].split(".")[0]
     os.makedirs(result_dir, exist_ok=True)
     result_dir += f'/{args.model}'#_{random_seed}'
     if not args.resume:
