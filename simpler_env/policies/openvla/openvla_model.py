@@ -48,8 +48,8 @@ class OpenVLAInference:
         self.dataset_id = dataset_id
         self.device = device
 
-        if model_type in ["openvla-7b"]:
-            self.model_type = f"openvla/{model_type}"
+        if ["openvla-7b"] in model_type:
+            #self.model_type = f"openvla/{model_type}"
             self.tokenizer = AutoProcessor.from_pretrained(self.model_type, trust_remote_code=True)
             self.model = AutoModelForVision2Seq.from_pretrained(self.model_type,
                                                                 torch_dtype=torch.bfloat16,
