@@ -74,7 +74,7 @@ Proceed with specific installation for each model in our evaluation:
 
 
 ### OpenVLA
-Create the conda environment:
+Activate the conda environment:
 ```
 conda activate <env_name>
 ```
@@ -100,7 +100,7 @@ cp modeling_prismatic openvla-7b
 
 
 ### pi0
-Create the conda environment:
+Activate the conda environment:
 ```
 conda activate <env_name>
 ```
@@ -137,7 +137,7 @@ python download_model.py HaomingSong/lerobot-pi0-fractal
 
 
 ### SpatialVLA
-Create the conda environment:
+Activate the conda environment:
 ```
 conda activate <env_name>
 ```
@@ -177,7 +177,7 @@ cd experiments
 
 ### Analyzing results
 
-Inside [result_analysis](/result_analysis) folder we provie all the scripts we used to analyze the results for each of our RQs.
+Inside [result_analysis](/result_analysis) folder we provide all the scripts we used to analyze the results for each of our RQs.
 
 
 ## Troubleshooting
@@ -217,5 +217,5 @@ If you found our paper/code useful in your research, please consider citing:
 - [ManiSkill2_real2sim](https://github.com/simpler-env/ManiSkill2_real2sim/tree/cd45dd27dc6bb26d048cb6570cdab4e3f935cc37)
 - [VLATest](https://github.com/ma-labo/VLATest)
 
-## Contant
+## Contact
 For any related question, please contact Pablo Valle (pvalle@mondragon.edu) , Chengjie Lu (chengjielu@simula.no) , Shaukat Ali (shaukat@simula.no) , and Aitor Arrieta (aarrieta@mondragon.edu)
