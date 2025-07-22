@@ -85,9 +85,9 @@ class VLAInterface:
         elif "pi0" in model_name:
             from simpler_env.policies.lerobotpi.pi0_or_fast import LerobotPiFastInference
             if self.policy_setup == "widowx_bridge":
-                model_path = "HaomingSong/lerobot-pi0-bridge"
+                model_path = "../checkpoints/lerobot-pi0-bridge"
             else:
-                model_path = "HaomingSong/lerobot-pi0-fractal"
+                model_path = "../checkpoints/lerobot-pi0-fractal"
 
             self.model = LerobotPiFastInference(saved_model_path=model_path, policy_setup=self.policy_setup)
             self.variability_models=[LerobotPiFastInference(saved_model_path=model_path, policy_setup=self.policy_setup) for i in range(0,uncerMetrics.VARIABILITY)]
