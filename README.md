@@ -1,6 +1,13 @@
-# Measuring Uncertainty and Quality of Visual Language Action Models
+<div align="center">
 
-Visual Language Action (VLA) models are a multi-modal class of Artificial Intelligence (AI) systems that integrate visual perception, natural language understanding, and action planning to enable agents to interpret their environment, comprehend instructions, and perform embodied tasks autonomously. Recently, significant progress has been made to advance this field. These kinds of models are typically evaluated through task success rates, which fail to capture the quality of task execution and the model’s confidence in its decisions. In this paper, we propose eight uncertainty metrics and five quality metrics specifically designed for VLA models for robotic manipulation tasks. We assess their effectiveness through a large-scale empirical study involving 908 successful task executions from three state-of-the-art VLA models across four representative robotic manipulation tasks. Human domain experts manually labeled task quality, allowing us to analyze the correlation between our proposed metrics and expert judgments. The results reveal that several metrics show moderate to strong correlation with human assessments, highlighting their utility for evaluating task quality and model confidence. Furthermore, we found that some of the metrics can discriminate between high-, medium-, and low-quality executions from unsuccessful tasks, which can be interesting when test oracles are not available. Our findings challenge the adequacy of current evaluation practices that rely solely on binary success rates and pave the way for improved real-time monitoring and adaptive enhancement of VLA-enabled robotic systems.
+# Measuring Uncertainty and Quality of Visual Language Action Models
+Uncertainty and Quality metrics specifically designed for VLA models for robotic manipulation tasks
+
+> [Pablo Valle](pvalle@mondragon.edu)<sup>1</sup>, [Chengjie Lu](chengjielu@simula.no)<sup>2</sup>, [Shaukat Ali](shaukat@simula.no)<sup>2</sup>, [Aitor Arrieta](aarrieta@mondragon.edu)<sup>1</sup>
+> Mondragon Unibertsitatea<sup>1</sup>, Simula Research Laboratory<sup>2</sup>
+
+
+</div>
 
 ## Data Availability
 
