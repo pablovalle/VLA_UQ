@@ -49,7 +49,7 @@ class OpenVLAInference:
         self.device = device
 
         #if ["openvla-7b"] in model_type:
-            #self.model_type = f"openvla/{model_type}"
+        self.model_type = model_type
         self.tokenizer = AutoProcessor.from_pretrained(self.model_type, trust_remote_code=True)
         self.model = AutoModelForVision2Seq.from_pretrained(self.model_type,
                                                             torch_dtype=torch.bfloat16,
