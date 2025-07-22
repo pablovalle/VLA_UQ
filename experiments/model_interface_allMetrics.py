@@ -78,7 +78,7 @@ class VLAInterface:
             self.policy_setup = "widowx_bridge"
         if "openvla" in model_name:
             from simpler_env.policies.openvla.openvla_model import OpenVLAInference
-            self.model = OpenVLAInference(model_type='../checkpoints/openvla-7b ', policy_setup=self.policy_setup)
+            self.model = OpenVLAInference(model_type='../checkpoints/openvla-7b', policy_setup=self.policy_setup)
             #self.followUpModel = OpenVLAInference(model_type=model_name, policy_setup=self.policy_setup)
             self.variability_models=[OpenVLAInference(model_type='../checkpoints/openvla-7b' , policy_setup=self.policy_setup) for i in range(0,uncerMetrics.VARIABILITY)]
             
