@@ -1,6 +1,6 @@
 <div align="center">
 
-# Measuring Uncertainty and Quality of Visual Language Action Models
+# Evaluating Uncertainty and Quality of Visual Language Action-enabled Robots
 Uncertainty and Quality metrics specifically designed for VLA models for robotic manipulation tasks
 
 [Pablo Valle](pvalle@mondragon.edu)<sup>1</sup>, [Chengjie Lu](chengjielu@simula.no)<sup>2</sup>, [Shaukat Ali](shaukat@simula.no)<sup>2</sup>, [Aitor Arrieta](aarrieta@mondragon.edu)<sup>1</sup></br>
@@ -11,7 +11,7 @@ Mondragon Unibertsitatea<sup>1</sup>, Simula Research Laboratory<sup>2</sup>
 
 ## Data Availability
 
-Our generated testing scenes is provided under ``data/`` in json files. To reproduce our experiment results, one can proceed to the following installation and replication guides. We also provide all the results in the folloing [Zenodo Package]()
+Our generated testing scenes is provided under ``data/`` in json files. To reproduce our experiment results, one can proceed to the following installation and replication guides. We also provide all the results in the folloing [Zenodo Package](https://doi.org/10.5281/zenodo.16315133)
 
 
 ## Prerequisites:
