@@ -102,7 +102,7 @@ class VLAInterface:
         else:
             raise ValueError(model_name)
 
-    def run_interface(self, seed=None, options=None, task_type=None, template=None):
+    def run_interface(self, seed=None, options=None, task_type=None):
 
         env = simpler_env.make(self.task)
         obs, reset_info = env.reset(seed=seed, options=options)
@@ -130,11 +130,6 @@ class VLAInterface:
         optimal_traj = []
         traj_inst_gradients = []
         gradients = []
-        metamorphic_VS_results = {method_name: [] for method_name in self.metamorphic_visual_methods}
-        mutated_images = {method_name: [] for method_name in self.metamorphic_visual_methods}
-        metamorphic_VS_actions = {method_name: [] for method_name in self.metamorphic_visual_methods}
-        metamorphic_PS_results = []
-        metamorphic_PS_actions = []
         traj_instability = {method_name: [[0, 0, 0, 0, 0, 0, 0] for i in range(0, TIME_RANGE - 1)] for method_name in
                             self.instability_methods}
         traj_instability_tcp = {method_name: [[0, 0, 0] for i in range(0, TIME_RANGE - 1)] for method_name in
@@ -291,7 +286,7 @@ class VLAInterface:
         print(f"Episode success: {success}")
         env.close()
         del env
-        return images, episode_stats, actions, tcp_poses, token_based_dict, variability, optimal_traj, traj_inst_gradients, metamorphic_VS_results, metamorphic_VS_actions, mutated_images, metamorphic_PS_results, metamorphic_PS_actions, traj_instability, traj_instability_tcp, exec_times_dict
+        return images, episode_stats, actions, tcp_poses, token_based_dict, variability, optimal_traj, traj_inst_gradients, traj_instability, traj_instability_tcp, exec_times_dict
 
 
 class VLAInterfaceLM(VLAInterface):

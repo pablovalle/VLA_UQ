@@ -117,7 +117,7 @@ if __name__ == '__main__':
         if args.resume and os.path.exists(result_dir + f"/allMetrics/{idx}/" + '/log.json'):  # if resume allowed then skip the finished runs.
             continue
         options = tasks[str(idx)]
-        images, episode_stats, actions, tcp_poses, uncertainty_token, uncertainty_variability, optimal_traj, traj_inst_gradients, metamorphic_VS_results, metamorphic_VS_actions, mutated_images, metamorphic_PS_results, metamorphic_PS_actions, traj_instability, traj_instability_tcp, exec_times_dict  = vla.run_interface(seed=random_seed, options=options, task_type=task_type, template=templates_ps1)
+        images, episode_stats, actions, tcp_poses, uncertainty_token, uncertainty_variability, optimal_traj, traj_inst_gradients,  traj_instability, traj_instability_tcp, exec_times_dict  = vla.run_interface(seed=random_seed, options=options, task_type=task_type)
         os.makedirs(result_dir + f"/allMetrics/{idx}", exist_ok=True)
 
 # ----------------------------- UNCERTAINTY METRICS ----------------------------------------------------------------------------------------------------
