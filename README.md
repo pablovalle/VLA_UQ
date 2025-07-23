@@ -3,7 +3,7 @@
 # Evaluating Uncertainty and Quality of Visual Language Action-enabled Robots
 Uncertainty and Quality metrics specifically designed for VLA models for robotic manipulation tasks
 
-[Pablo Valle](pvalle@mondragon.edu)<sup>1</sup>, [Chengjie Lu](chengjielu@simula.no)<sup>2</sup>, [Shaukat Ali](shaukat@simula.no)<sup>2</sup>, [Aitor Arrieta](aarrieta@mondragon.edu)<sup>1</sup></br>
+[Pablo Valle](https://scholar.google.com/citations?user=-3y0BlAAAAAJ&hl=en)<sup>1</sup>, [Chengjie Lu](https://scholar.google.com/citations?user=fwAwgngAAAAJ&hl=en&oi=ao)<sup>2</sup>, [Shaukat Ali](https://scholar.google.com/citations?user=S_UVLhUAAAAJ&hl=en)<sup>2</sup>, [Aitor Arrieta](https://scholar.google.com/citations?user=ft06jF4AAAAJ&hl=en)<sup>1</sup></br>
 Mondragon Unibertsitatea<sup>1</sup>, Simula Research Laboratory<sup>2</sup>
 
 
