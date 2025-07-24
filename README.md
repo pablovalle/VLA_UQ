@@ -213,7 +213,15 @@ The dlimp library has not been maintained for a long time, so the TensorFlow ver
 If you found our paper/code useful in your research, please consider citing:
 
 ```
-
+@misc{valle2025evaluatinguncertaintyqualityvisual,
+      title={Evaluating Uncertainty and Quality of Visual Language Action-enabled Robots}, 
+      author={Pablo Valle and Chengjie Lu and Shaukat Ali and Aitor Arrieta},
+      year={2025},
+      eprint={2507.17049},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2507.17049}, 
+}
 ```
 
 ## Acknowledgement
